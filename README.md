@@ -7,15 +7,13 @@ SLON (Single Line Object Notation) is a small modification to JSON (JavaScript O
 Example of a weather notification using SLON:
 
 ````
-The current conditions are (condition: Moderate Rain, temp: 12.2, feelsLike: 14, 
-sunLight: true, date: 2023-02-05/12:34:45.678)
+The current conditions are (condition: Moderate Rain, temp: 12.2, feelsLike: 14, sunLight: true, date: 2023-02-05/12:34:45.678)
 ````
 
 The same using JSON:
 
 ````
-The current conditions are {"condition":"Moderate Rain","temp":12.2,"feelsLike":14,
-"sunLight":true,"date":"2023-02-05/12:34:45.678"}
+The current conditions are {"condition":"Moderate Rain","temp":12.2,"feelsLike":14,"sunLight":true,"date":"2023-02-05/12:34:45.678"}
 ````
 
 ## Changes from JSON
@@ -39,13 +37,11 @@ Additionally:
 In SLON:
 
 ````
-(number: 123.12, boolean: true, null_value: null, 
-array: [1 | 'item' | 3], map: (x: -1, y: 1), date: 1235-01-17/12:34:56.123)
+(number: 123.12, boolean: true, null_value: null, array: [1 | 'item' | 3], map: (x: -1, y: 1), date: 1235-01-17/12:34:56.123)
 ````
 
 In JSON:
 
 ````
-{"number":123.12,"boolean":true,"null_value":null,
-"array":[1,"item",3],"map":{"x":-1,"y":1},"date":"1235-01-24T12:34:56.123Z"}
+{"number":123.12,"boolean":true,"null_value":null,"array":[1,"item",3],"map":{"x":-1,"y":1},"date":"1235-01-24T12:34:56.123Z"}
 ````
