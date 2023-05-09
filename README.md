@@ -30,6 +30,7 @@ Additionally:
 * dates are simplified from ````1234-12-24T12:34:56.123Z```` to ````1234-12-24/12:34:56.123````
 * map keys don't need to be quoted unless they contain ":" or quotes
 * string values don't need to be quoted unless they contain "," or quotes 
+* preferable use single-quote instead of double-quote
 
 ## Example with all types
 
