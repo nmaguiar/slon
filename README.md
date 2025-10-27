@@ -121,5 +121,7 @@ function toSlon(obj) {
   - `nodejs/` – Node.js runtime package.
   - `go/` – Go module exposing `Parse` and `Stringify`.
   - `rust/` – Rust crate with a strongly typed `Value` enum.
+  - `java/` – Java parser/formatter with a Gradle build.
+  - `c/` – C99 library with parser, formatter, and static archive target.
 - [Peggy documentation](https://peggyjs.org/documentation.html) – tools and options for generating parsers.
 - [JSON specification](https://www.json.org/json-en.html) – SLON diverges minimally, so JSON resources remain relevant.
