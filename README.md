@@ -116,5 +116,10 @@ function toSlon(obj) {
 ## See Also
 
 - `grammar/slon.pegjs` – canonical grammar definition.
+- Language clients:
+  - `python/` – Python parser and formatter.
+  - `nodejs/` – Node.js runtime package.
+  - `go/` – Go module exposing `Parse` and `Stringify`.
+  - `rust/` – Rust crate with a strongly typed `Value` enum.
 - [Peggy documentation](https://peggyjs.org/documentation.html) – tools and options for generating parsers.
 - [JSON specification](https://www.json.org/json-en.html) – SLON diverges minimally, so JSON resources remain relevant.

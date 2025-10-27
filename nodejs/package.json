@@ -1,0 +1,10 @@
+{
+  "name": "slon-nodejs",
+  "version": "0.1.0",
+  "description": "Node.js parser for Single Line Object Notation (SLON)",
+  "main": "index.js",
+  "license": "MIT",
+  "engines": {
+    "node": ">=14"
+  }
+}

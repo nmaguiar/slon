@@ -1,0 +1,9 @@
+[package]
+name = "slon"
+version = "0.1.0"
+edition = "2021"
+description = "Rust parser for Single Line Object Notation (SLON)"
+license = "MIT"
+
+[dependencies]
+chrono = { version = "0.4", features = ["clock"] }
