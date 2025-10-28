@@ -123,5 +123,6 @@ function toSlon(obj) {
   - `rust/` – Rust crate with a strongly typed `Value` enum.
   - `java/` – Java parser/formatter with a Gradle build.
   - `c/` – C99 library with parser, formatter, and static archive target.
+  - `swift/` – Swift Package Manager library with parsing and serialisation APIs.
 - [Peggy documentation](https://peggyjs.org/documentation.html) – tools and options for generating parsers.
 - [JSON specification](https://www.json.org/json-en.html) – SLON diverges minimally, so JSON resources remain relevant.
