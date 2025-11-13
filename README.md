@@ -106,6 +106,46 @@ function toSlon(obj) {
 - **Compact configuration:** `(service: api, replicas: 3, regions: [eu-west-1 | us-east-1], maintenance: 2024-06-10/01:00:00.000)`
 - **Incident notification:** `(priority: high, title: 'Queue backlog', backlogSize: 1203, acknowledged: false)`
 
+### Everyday ergonomics compared with one-line JSON
+
+SLON keeps single-line payloads readable without the quoting gymnastics often required by JSON. This is especially noticeable when
+working with environment variables or shell arguments, where layers of escaping quickly become error-prone:
+
+- **Unix environment variable:**
+
+  ```bash
+  # JSON requires escaping quotes.
+  export APP_CONFIG="{\"mode\":\"dry-run\",\"retries\":2,\"features\":[\"alpha\",\"beta\"]}"
+
+  # SLON stays legible and copy/paste friendly.
+  export APP_CONFIG="(mode: dry-run, retries: 2, features: [alpha | beta])"
+  ```
+
+- **`docker run` flag:**
+
+  ```bash
+  docker run \
+    -e APP_CONFIG="(host: api.internal, port: 8443, tls: true)" \
+    my-service
+  ```
+
+  The same command with JSON would require extra backslashes to escape every quote, reducing clarity.
+
+- **Kubernetes `values.yaml` inline overrides:**
+
+  ```yaml
+  env:
+    - name: APP_CONFIG
+      value: "(workerPool: ingest, limits: (memoryMb: 512, cpu: 0.5))"
+  ```
+
+  Using JSON here forces you to nest double quotes or switch to YAML multi-line literals. SLON keeps the override a concise, single
+  line while remaining easy to read.
+
+Other command-line tooling benefits similarly: flags passed to Terraform, Helm, or CI workflows often accept single-line strings
+for structured data. Replacing a dense JSON blob with SLON makes it easier to audit diffs, spot typos, and edit values quickly without
+touching escape characters.
+
 ## Caveats and Tips
 
 - Datetime literals are parsed as UTC timestamps. If you prefer local time keep a note in your consumer logic.
