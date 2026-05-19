@@ -1,0 +1,12 @@
+/home/runner/work/slon/slon/csharp/src/Slon/bin/Debug/net6.0/Slon.deps.json
+/home/runner/work/slon/slon/csharp/src/Slon/bin/Debug/net6.0/Slon.dll
+/home/runner/work/slon/slon/csharp/src/Slon/bin/Debug/net6.0/Slon.pdb
+/home/runner/work/slon/slon/csharp/src/Slon/obj/Debug/net6.0/Slon.GeneratedMSBuildEditorConfig.editorconfig
+/home/runner/work/slon/slon/csharp/src/Slon/obj/Debug/net6.0/Slon.AssemblyInfoInputs.cache
+/home/runner/work/slon/slon/csharp/src/Slon/obj/Debug/net6.0/Slon.AssemblyInfo.cs
+/home/runner/work/slon/slon/csharp/src/Slon/obj/Debug/net6.0/Slon.csproj.CoreCompileInputs.cache
+/home/runner/work/slon/slon/csharp/src/Slon/obj/Debug/net6.0/Slon.sourcelink.json
+/home/runner/work/slon/slon/csharp/src/Slon/obj/Debug/net6.0/Slon.dll
+/home/runner/work/slon/slon/csharp/src/Slon/obj/Debug/net6.0/refint/Slon.dll
+/home/runner/work/slon/slon/csharp/src/Slon/obj/Debug/net6.0/Slon.pdb
+/home/runner/work/slon/slon/csharp/src/Slon/obj/Debug/net6.0/ref/Slon.dll
