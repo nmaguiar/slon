@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "za4ON72ALJY=",
+  "dgSpecHash": "DGDWni8jI34=",
   "success": true,
   "projectFilePath": "/home/runner/work/slon/slon/csharp/src/Slon/Slon.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "/tmp/codeql-scratch-7fbee4f94d905911/dbs/csharp/working/packages/microsoft.netcore.app.ref/8.0.25/microsoft.netcore.app.ref.8.0.25.nupkg.sha512",
+    "/tmp/codeql-scratch-7fbee4f94d905911/dbs/csharp/working/packages/microsoft.aspnetcore.app.ref/8.0.25/microsoft.aspnetcore.app.ref.8.0.25.nupkg.sha512"
+  ],
   "logs": []
 }
